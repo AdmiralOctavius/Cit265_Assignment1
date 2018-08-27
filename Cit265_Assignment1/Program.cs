@@ -35,10 +35,10 @@ namespace Cit265_Assignment1
         //Six different methods
         double ReturnX(double y)
         {
-            double x = 0;
 
-
-
+            double tempB = y * B;
+            double tempC = C - tempB;
+            double x = tempC / A;
             return x;
         }
     }
