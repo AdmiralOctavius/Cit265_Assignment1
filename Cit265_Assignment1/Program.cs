@@ -41,5 +41,40 @@ namespace Cit265_Assignment1
             double x = tempC / A;
             return x;
         }
+
+        double ReturnY(double x)
+        {
+            double tempA = x * A;
+            double tempC = C - tempA;
+            double y = tempC / B;
+            return y;
+        }
+
+        double ReturnSlope()
+        {
+            double slope = 0;
+            if (b != 0)
+            {
+                slope = (-1 * a) / b;
+            }
+            return slope;
+        }
+
+        bool CompareParallel(Line lineA, Line lineB)
+        {
+
+
+        }
+
+        bool ComparePerpindicular(Line lineA, Line lineB)
+        {
+
+
+        }
+
+        void CompareIntersect(Line lineA, Line lineB)
+        {
+
+        }
     }
 }
