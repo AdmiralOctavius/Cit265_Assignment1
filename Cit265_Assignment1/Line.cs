@@ -104,10 +104,21 @@ namespace Cit265_Assignment1
                 return arePerpindicular;
 
         }
-        /*
-        void CompareIntersect(Line lineA, Line lineB)
+        
+        public void CompareIntersect(Line lineB)
         {
+            if (CompareParallel(lineB) == false)
+            {
+                double x = ((C * lineB.B) - (B * lineB.C)) / ((A * lineB.B) - (B * lineB.A));
+                double y = ((A * lineB.C) - (C * lineB.A)) / ((A * lineB.B) - (B * lineB.A));
 
-        }*/
+                Console.WriteLine($"The Lines intersect at this point: x-{x} y-{y}");
+            }
+            else
+            {
+                Console.WriteLine("Lines do not intersect! They are parallel.");
+            }
+
+        }
     }
 }

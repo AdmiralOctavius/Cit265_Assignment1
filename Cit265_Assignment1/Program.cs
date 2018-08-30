@@ -11,8 +11,8 @@ namespace Cit265_Assignment1
         static void Main(string[] args)
         {
             Line myLine = new Line();
-            myLine.A =0;
-            myLine.B = 0;
+            myLine.A =12;
+            myLine.B = 32;
             myLine.C = 67;
             Console.WriteLine(myLine.isValid());
             //Console.WriteLine(myLine.A);
@@ -23,10 +23,12 @@ namespace Cit265_Assignment1
 
             Line myLineB = new Line();
             myLineB.A = 34;
-            myLineB.B = 0;
+            myLineB.B = 21;
             myLineB.C = 101;
             Console.WriteLine(myLine.CompareParallel(myLineB));
             Console.WriteLine(myLine.ComparePerpindicular(myLineB));
+
+            myLine.CompareIntersect(myLineB);
         }
     }
 
