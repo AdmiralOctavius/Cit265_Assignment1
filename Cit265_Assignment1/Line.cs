@@ -8,7 +8,10 @@ namespace Cit265_Assignment1
 {
     class Line
     {
+        //Private values
         private double a, b, c;
+
+        //Getters and setters for base values
         public double A
         {
             get { return a; }
@@ -25,6 +28,7 @@ namespace Cit265_Assignment1
             set { c = value; }
         }
 
+        //Is Valid function, checks to see if the line has at least one non zero value
         public bool isValid()
         {
             if(A != 0 || B != 0)
@@ -36,7 +40,10 @@ namespace Cit265_Assignment1
                 return false;
             }
         }
+
         //Six different methods
+
+        //Basic solve for X functions
         public double ReturnX(double y)
         {
  
@@ -55,6 +62,7 @@ namespace Cit265_Assignment1
             return y;
         }
 
+        //Solve for slope return
         public double ReturnSlope()
         {
             double slope = 0;
@@ -65,6 +73,7 @@ namespace Cit265_Assignment1
             return slope;
         }
 
+        //Compare another line to see if they are parallel or perpindicular
         public bool CompareParallel(Line lineA)
         {
             bool areParallel = false;
@@ -85,6 +94,7 @@ namespace Cit265_Assignment1
             return areParallel;
         }
         
+
         public bool ComparePerpindicular(Line lineA)
         {
             bool arePerpindicular = false;
@@ -105,6 +115,7 @@ namespace Cit265_Assignment1
 
         }
         
+        //Intersect comparison
         public void CompareIntersect(Line lineB)
         {
             if (CompareParallel(lineB) == false)
