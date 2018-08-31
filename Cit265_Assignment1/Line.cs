@@ -69,7 +69,7 @@ namespace Cit265_Assignment1
         {
             bool areParallel = false;
 
-            if(lineA.B ==0 && B == 0)
+            if(lineA.B == 0 && B == 0)
             {
                 areParallel = true;
             }
@@ -112,7 +112,7 @@ namespace Cit265_Assignment1
                 double x = ((C * lineB.B) - (B * lineB.C)) / ((A * lineB.B) - (B * lineB.A));
                 double y = ((A * lineB.C) - (C * lineB.A)) / ((A * lineB.B) - (B * lineB.A));
 
-                Console.WriteLine($"The Lines intersect at this point: x-{x} y-{y}");
+                Console.WriteLine($"The Lines intersect at this point: x-{Math.Round(x,3)} y-{Math.Round(y,3)}");
             }
             else
             {
